@@ -1,0 +1,104 @@
+::root{
+	--border-color:#6edefa;
+
+}
+body {
+	font-family: Arial, helvetica, sans-serif;
+	background-color: #4c4da1;
+}
+
+.comments-container{
+	width: 800px;
+	margin: 100px auto;
+	color : white;
+
+}
+
+.comments-container >.comment{
+	margin-bottom: 10px;
+
+}
+
+.comments-container .comment .line {
+	position: relative;
+	width: 40px;
+	height: 10px;
+	border-left: solid black 3px  #3f8ae0;
+	border-bottom: solid 3px #3f8ae0;
+	border-radius: 0 0 0 8px;
+}
+
+.comments-container .comment .comment-wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.comments-container .comment .comment-wrapper .content{
+	width: 100%;
+	display: flex;
+	border: solid 1px #3f8ae0;
+	padding: 3px;
+	border-radius: 3px;
+	background-color: rgb(14,57,107);
+}
+
+ img {
+ border-radius: 50%;
+ width: 50px;
+ padding-right: 10px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .username {
+font-weight: bold;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .date {
+color: #9999;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions {
+	display: flex;
+	gap: 5px;
+}
+
+button {
+ border: none;
+ background-color: transparent;
+ color: #558bff;
+ cursor: pointer;
+ padding: 5px;
+ border-radius: 3px;
+
+}
+button:hover {
+	color: white;
+	background-color: #558bff;
+}
+
+
+.comments-container .replies .comment{
+	padding-top: 10px;
+	position: relative;
+	padding-left: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.comments-container .replies .comment ::before{
+position: absolute;
+background-color: #558bff;
+width: 1px;
+top: 0;
+height: calc(100% - 53px);
+}
+
+
+
